@@ -1,13 +1,16 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Centers content vertically */
     align-items: center;
+    min-height: 100vh; /* Full viewport height */
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 header {
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 20px; /* Adds some space below the header */
 }
 
 .button-grid {
@@ -15,20 +18,4 @@ header {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin-top: 20px;
-}
-
-.sound-button {
-    padding: 15px;
-    font-size: 1rem;
-    text-align: center;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.sound-button:hover {
-    background-color: #45a049;
 }
