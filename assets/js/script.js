@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".sound-button");
 
     function playSound(soundFile) {
-        const audio = new Audio(`assets/sounds/${soundFile}.mp3`);
+        const audio = new Audio(`assets/sounds/ding-101492.mp3`);
         audio.play();
     }
 
