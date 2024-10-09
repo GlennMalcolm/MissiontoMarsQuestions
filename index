@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Match Buttons</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .sound-button {
+            padding: 15px;
+            font-size: 1rem;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .sound-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sound Matching Game</h1>
+    <p>Press each button to match the sound that will be played below each button in the future.</p>
+
+    <div class="button-grid">
+        <button class="sound-button">Sound 1</button>
+        <button class="sound-button">Sound 2</button>
+        <button class="sound-button">Sound 3</button>
+        <button class="sound-button">Sound 4</button>
+        <button class="sound-button">Sound 5</button>
+        <button class="sound-button">Sound 6</button>
+        <button class="sound-button">Sound 7</button>
+        <button class="sound-button">Sound 8</button>
+        <button class="sound-button">Sound 9</button>
+        <button class="sound-button">Sound 10</button>
+        <button class="sound-button">Sound 11</button>
+        <button class="sound-button">Sound 12</button>
+        <button class="sound-button">Sound 13</button>
+        <button class="sound-button">Sound 14</button>
+        <button class="sound-button">Sound 15</button>
+        <button class="sound-button">Sound 16</button>
+    </div>
+
+</body>
+</html>
