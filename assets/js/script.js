@@ -77,6 +77,11 @@ function showQuestion(category) {
     const question1 = document.getElementById('question1');
     const question2 = document.getElementById('question2');
     const selectedQuestions = questions[category];
-    question1.innerText = selectedQuestions[0];
-    question2.innerText = selectedQuestions[1];
+
+    if (selectedQuestions) {
+        question1.innerText = selectedQuestions[0];
+        question2.innerText = selectedQuestions[1];
+    } else {
+        console.error('Category not found:', category);
+    }
 }
