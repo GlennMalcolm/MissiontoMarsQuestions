@@ -3,33 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Match Game</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mission to Mars: Student Interviews</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Sound Match Game</h1>
-        <p>Press each button to match the sound that will be played below each button in the future.</p>
+        <h1>Tell Me About Your Mars Mission</h1>
+        <p>Click a category to see questions about your design and process!</p>
     </header>
 
     <main>
-        <div class="button-grid">
-            <!-- Column 1 -->
-            <div class="button-column">
-                <button class="sound-button" data-sound="sound1">Sound 1</button>
-                <button class="sound-button" data-sound="sound2">Sound 2</button>
-                <!-- Continue for each button -->
-            </div>
-            <!-- Column 2 -->
-            <div class="button-column">
-                <button class="sound-button" data-sound="sound9">Sound 9</button>
-                <button class="sound-button" data-sound="sound10">Sound 10</button>
-                <!-- Continue for each button -->
-            </div>
+        <div class="buttons">
+            <button onclick="showQuestion('inspiration')">Inspiration and Concept</button>
+            <button onclick="showQuestion('challenges')">Design Challenges</button>
+            <button onclick="showQuestion('precision')">Precision and Measurement</button>
+            <button onclick="showQuestion('collaboration')">Team Collaboration</button>
+            <button onclick="showQuestion('assembly')">Assembly and Testing</button>
+            <button onclick="showQuestion('reflection')">Reflection and Growth</button>
+        </div>
+        <div id="questions">
+            <p id="question1">Select a category to see the first question!</p>
+            <p id="question2">Select a category to see the second question!</p>
         </div>
     </main>
 
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
